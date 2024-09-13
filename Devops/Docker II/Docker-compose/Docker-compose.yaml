@@ -1,0 +1,44 @@
+version: '3'
+
+services:
+  web1:
+    image: shahid199578/my-ubuntu-apache-image
+    container_name: web1
+    ports:
+      - "81:80"
+    volumes:
+      - ./page1.html:/var/www/html/index.html
+    command: apache2ctl -D FOREGROUND
+
+  web2:
+    image: shahid199578/my-ubuntu-apache-image
+    container_name: web2
+    ports:
+      - "82:80"
+    volumes:
+      - ./page2.html:/var/www/html/index.html
+    command: apache2ctl -D FOREGROUND
+  web3:
+    image: shahid199578/my-ubuntu-apache-image
+    container_name: web3
+    ports:
+      - "83:80"
+    volumes:
+      - ./page3.html:/var/www/html/index.html
+    command: apache2ctl -D FOREGROUND
+  web4:
+    image: shahid199578/my-ubuntu-apache-image
+    container_name: web4
+    ports:
+      - "84:80"
+    volumes:
+      - ./page4.html:/var/www/html/index.html
+    command: apache2ctl -D FOREGROUND
+  web5:
+    image: shahid199578/my-ubuntu-apache-image
+    container_name: web5
+    ports:
+      - "85:80"
+    volumes:
+      - ./page5.html:/var/www/html/index.html
+    command: apache2ctl -D FOREGROUND
