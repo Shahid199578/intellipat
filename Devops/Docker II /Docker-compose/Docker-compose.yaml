@@ -41,4 +41,4 @@ services:
       - "85:80"
     volumes:
       - ./page5.html:/var/www/html/index.html
-    command: apache2ctl -D FOREGROUND
+    command: apache2ctl -D FOREGROUND 
